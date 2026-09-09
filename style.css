@@ -64,11 +64,18 @@ body{
 .hand:nth-of-type(2) { --clr: #3ddbff; }   /* minute hand */
 .hand:nth-of-type(3) { --clr: #8890e7; }   /* second hand — often different color */
 
+.hand{
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
 .hand i{
     position: absolute;
-    background-color: #fff;
+    background-color:var(--clr);
     width:4px;
     height:70px;
     border-radius: 8px;
-
 }
